@@ -1,0 +1,19 @@
+{
+  "name": "init",
+  "version": "0.0.1",
+  "description": "init",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "fill with repo type",
+    "url": "fill with repo url"
+  },
+  "author": "fill with your name",
+  "license": "fill with license",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "fill with the home page of the project"
+}
