@@ -15,5 +15,7 @@
   "bugs": {
     "url": ""
   },
-  "homepage": "fill with the home page of the project"
+  "homepage": "fill with the home page of the project",
+  "dependencies": {
+  } 
 }
