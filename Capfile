@@ -14,8 +14,3 @@ end
 
 after "automatic", "xp5k"
 
-
-role :test do
-  $myxp.get_deployed_nodes('capi5k-init')
-end
-
