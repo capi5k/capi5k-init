@@ -1,21 +1,16 @@
 {
-  "name": "init",
+  "name": "capi5k-init",
   "version": "0.0.1",
-  "description": "init",
-  "main": "",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "capi5k-init",
+  "main": "recipe.rb",
   "repository": {
-    "type": "fill with repo type",
-    "url": "fill with repo url"
+    "type": "git",
+    "url": "https://github.com/msimonin/capi5k-init.git"
   },
-  "author": "fill with your name",
-  "license": "fill with license",
+  "author": "msimonin",
+  "license": "BSD-2-Clause",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/capi5k/cap5k-init/issues"
   },
-  "homepage": "fill with the home page of the project",
-  "dependencies": {
-  } 
+  "homepage": "https://github.com/capi5k/capi5k-init"
 }
