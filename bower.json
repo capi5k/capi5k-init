@@ -12,5 +12,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": 
+  {
+    "cassandra": "https://github.com/capi5k/capi5k-cassandra/tarball/casssandra-bower"
+  }
 }

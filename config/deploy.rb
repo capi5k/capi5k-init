@@ -4,7 +4,7 @@ load "config/lib/spinner.rb"
 
 
 # relative to the capfile
-set :recipes_path, "./node_modules"
+set :recipes_path, "./bower_components"
 
 # Enable pretty output. Remove it if you want full logging
 #logger.level = Logger::IMPORTANT
