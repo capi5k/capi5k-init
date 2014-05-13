@@ -12,7 +12,7 @@ set :recipes_path, "./bower_components"
 
 
 
-# load recipes
+# load recipes of dependencies
 recipes = Dir.glob("#{recipes_path}/*");
 recipes.each do |recipe|
     load "#{recipe}/recipe.rb"
@@ -25,8 +25,9 @@ roles.each do |role|
     load "#{role}"
 end
 
-
-if File.exist?("roles.rb")
-  load "roles.rb"
+# load recipes
+if File.exist?("recipes.rb")
+  load "recipes.rb"
 end
+
 
