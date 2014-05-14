@@ -20,7 +20,7 @@ end
 
 #override default roles
 #ad specs roles.
-roles = Dir.glob("specs/*/roles.rb")
+roles = Dir.glob("exports/*/roles.rb")
 roles.each do |role|
     load "#{role}"
 end
