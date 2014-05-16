@@ -26,8 +26,8 @@ roles.each do |role|
 end
 
 # load recipes
-if File.exist?("recipes.rb")
-  load "recipes.rb"
+if File.exist?("recipe.rb")
+  load "recipe.rb"
 end
 
 
