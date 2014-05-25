@@ -5,6 +5,9 @@ require 'erb'
 
 XP5K::Config.load
 
+set :site, ENV['site'] || "nancy"
+set :walltime, ENV['walltime'] || "01:00:00"
+
 $myxp = XP5K::XP.new(:logger => logger)
 
 $myxp.define_job({

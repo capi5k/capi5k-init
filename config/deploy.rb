@@ -1,16 +1,19 @@
-load "config.rb"
-load "config/deploy/xp5k.rb"
-load "config/lib/spinner.rb"
-
-
 # relative to the capfile
-set :recipes_path, "./bower_components"
+set :recipes_path, "./xpm_modules"
 
 # Enable pretty output. Remove it if you want full logging
 #logger.level = Logger::IMPORTANT
 #STDOUT.sync
 
+# load connection parameters (ssh keys, gateway)
+conn_config = File.join(ENV["HOME"], ".xpm", "connection.rb")
 
+if File.exist?(conn_config)
+  load conn_config
+end
+
+load "config/deploy/xp5k.rb"
+load "config/lib/spinner.rb"
 
 # load recipes of dependencies
 recipes = Dir.glob("#{recipes_path}/*");
@@ -19,7 +22,6 @@ recipes.each do |recipe|
 end
 
 #override default roles
-#ad specs roles.
 roles = Dir.glob("exports/*/roles.rb")
 roles.each do |role|
     load "#{role}"
